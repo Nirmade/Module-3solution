@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title> Food LLC </title>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css">
+     <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+     <style>
+  /********** Base styles **********/
+* {
+  box-sizing: border-box;
+}
+
+
+       #header-nav {
+    background-color: grey;
+    width: 100%;
+    padding:0px;
+    height: 70px;
+    text-align: left;
+    color: black;
+    font-size: 40px;
+    margin-top: 0;
+    border-radius: 0;
+    border:0;
+}
+
+
+h1 {
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.box {
+ 
+  margin: 2em;
+  
+  position: relative;
+}
+
+.body {
+  border: 1px solid black;
+  background-color: #bbb;
+  height: 700px;
+  width: 100%;
+  padding-top: 1em;
+  font-family: Helvetica;
+  text-align: center;
+  color: solid black;
+
+}
+
+
+#section {
+   border: 10px black;
+  padding: 10px;
+  height:500px;
+  width:100%;
+  background:#D3D3D3;
+  margin-top:10px;
+  margin-bottom: 15px; 
+  margin-left: 11px;
+  margin-right: 11px;
+  box-sizing: border-box; 
+  border-radius: 0;
+    border:0;
+}
+
+h2{
+  text-align:center;
+  font-weight: bold;
+}
+h3{
+  text-align:center;
+}
+
+/* Simple Responsive Framework. */
+.row {
+  width: 100%;
+}
+/********** Large devices(Desktop) medium device only **********/
+@media (min-width: 768px) {
+  col-lg-1
+  col-sm-12
+  .col-md-12;
+    margin-top: 0;
+}
+
+/**mobile and tablet view only**/
+.topnav {
+  overflow: hidden;
+  background-color: grey;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for Food LLC/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: black;
+  padding: 8px 10px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: grey;
+  display: block;
+  position: absolute;
+  font-weight: bold;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color:#D3D3D3;
+  color: white;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #D3D3D3;
+  color: white;
+}
+
+
+.hero {   
+  background-color: #D3D3D3;
+  position: relative;
+  height: 2px;
+  width: 100%;
+}
+
+
+.hero:after {
+  border-right: solid 50px transparent;
+  border-left: solid 50px transparent;
+  border-top: solid 50px black;
+  transform: translateX(-50%);
+  position: absolute;
+  z-index: -1;
+  content: '';
+  top: 100%;
+  left: 30%;
+  height: 0;
+  width: 0;
+}
+
+</style>
+</head>
+     <header>
+       <nav id="header-nav" class="navbar navbar-default visible-lg visible-md">
+      <div class="container">
+        <div class="navbar-header">
+          <a href="#" class="menu-btn visible-sm visible-xs"></a>
+          <h1> Food LLC</h1>
+ </div>
+ </nav>
+</header>
+  <div style="padding:10px 15px 2500px;font-size:20px;margin-top:20px;">
+<div class="topnav visible-sm visible-xs">
+  <a href="#home" class="active">Food LLC</a>
+ 
+  <div id="myLinks">
+    <a href="#chicken" style="text-align: center">Chicken</a>
+    <a href="#beef" style="text-align: center">Beef</a>
+    <a href="#sushi" style="text-align: center">Sushi</a>
+  </div>
+
+  <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+    <i class="fa fa-bars"></i>
+  </a>
+</div>
+
+<div style="padding-left:16px">
+
+
+<!-- End smartphone / tablet look -->
+</div>
+
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
+ <span class="align-middle"> 
+  <h2> Our Menu </h2> </span>
+      
+ <div class="boxtitle">
+ <div class="col-sm-12 style="bacground-color: grey;">
+  <div id="section">
+      
+ <h3> Chicken</h3>
+     <p>What is Lorem Ipsum
+  Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+</div>
+</div>
+</div>
+  <div class="boxtitle">
+ <div class="col-sm-12 style="bacground-color: grey;">
+  <div id="section">
+  <h3> Beef </h3>
+   <p>What is Lorem Ipsum
+  Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature, discovered the undoubtable source. Lorem Ipsum comes from sections 1.10.32 and 1.10.33 of "de Finibus Bonorum et Malorum" (The Extremes of Good and Evil) by Cicero, written in 45 BC. This book is a treatise on the theory of ethics, very popular during the Renaissance. The first line of Lorem Ipsum, "Lorem ipsum dolor sit amet..", comes from a line in section 1.10.32.</p>
+</div>
+</div>
+</div>
+<div class="boxtitle">
+ <div class="col-sm-12 style="bacground-color: grey;">
+  <div id="section">
+  <h3>Fish</h3>
+  <p>There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+ <div class="hero">
+                  </div>
+</body>
+</html>
